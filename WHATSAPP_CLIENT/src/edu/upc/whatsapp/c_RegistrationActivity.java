@@ -37,6 +37,28 @@ public class c_RegistrationActivity extends Activity implements View.OnClickList
     if (arg0 == findViewById(R.id.editregistrationButton)) {
 
       //...
+      user = new User();
+
+      EditText loginText = findViewById(R.id.RegisterLoginTextInput);
+      String loginId = loginText.getText().toString();
+      user.setLogin(loginId);
+
+      EditText passwordText = findViewById(R.id.RegisterPasswordTextInput);
+      String password = passwordText.getText().toString();
+      user.setPassword(password);
+
+      EditText emailText = findViewById(R.id.RegisterEmailTextInput);
+      String email = emailText.getText().toString();
+      user.setEmail(email);
+
+      UserInfo userInfo = new UserInfo();
+      EditText nameText = findViewById(R.id.RegisterNameTextInput);
+      String name = nameText.getText().toString();
+      userInfo.setName(name);
+      EditText surnameText = findViewById(R.id.RegisterSurnameTextInput);
+      String surname = surnameText.getText().toString();
+      userInfo.setSurname(surname);
+      user.setUserInfo(userInfo);
 
       progressDialog = ProgressDialog.show(this, "RegistrationActivity", "Registering for service...");
       // if there's still a running thread doing something, we don't create a new one
@@ -55,6 +77,8 @@ public class c_RegistrationActivity extends Activity implements View.OnClickList
       Bundle b = new Bundle();
 
       //...
+      UserInfo userInfo = RPC.registration(user);
+      b.putSerializable("userInfo", userInfo);
 
       msg.setData(b);
       handler.sendMessage(msg);
@@ -74,6 +98,8 @@ public class c_RegistrationActivity extends Activity implements View.OnClickList
         toastShow("Registration successful");
 
         //...
+        globalState.my_user = userInfo;
+        globalState.save_my_user();
 
         finish();
       }
