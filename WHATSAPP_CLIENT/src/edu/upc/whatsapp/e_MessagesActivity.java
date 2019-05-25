@@ -59,6 +59,9 @@ public class e_MessagesActivity extends Activity {
     super.onResume();
 
     //...
+    timer = new Timer();
+    TimerTask task = new fetchNewMessagesTimerTask();
+    timer.schedule(task, 1000, 2000);
 
   }
 
@@ -67,6 +70,8 @@ public class e_MessagesActivity extends Activity {
     super.onPause();
 
     //...
+    if(timer!=null)
+     timer.cancel();
 
   }
 
@@ -83,8 +88,14 @@ public class e_MessagesActivity extends Activity {
 
       //...
 
-      //remove this sentence on completing the code:
-      return null;
+      List<Message> all_messages;
+      if(globalState.isThere_messages()) {
+        all_messages = globalState.load_messages();
+      } else {
+        all_messages= RPC.retrieveMessages(userIds[0], userIds[1]);
+      }
+
+      return all_messages;
     }
 
     @Override
@@ -96,7 +107,11 @@ public class e_MessagesActivity extends Activity {
         toastShow(all_messages.size()+" messages downloaded");
 
         //...
+        globalState.save_new_messages(all_messages);
 
+        adapter = new MyAdapter_messages(e_MessagesActivity.this, all_messages, globalState.user_to_talk_to);
+
+        conversation.setAdapter(adapter);
       }
     }
   }
@@ -107,9 +122,17 @@ public class e_MessagesActivity extends Activity {
     protected List<Message> doInBackground(Integer... userIds) {
 
       //...
+      List<Message> all_messages = null;
+      if(globalState.isThere_messages()) {
+        List<Message> saved_messages = globalState.load_messages();
+        Message msg = null;
+        if(saved_messages!=null && saved_messages.size()>0){
+          msg = all_messages.get(all_messages.size()-1);
+        }
+        all_messages = RPC.retrieveNewMessages(userIds[0], userIds[1], msg);
+    }
 
-      //remove this sentence on completing the code:
-      return null;
+    return all_messages;
     }
 
     @Override
@@ -120,6 +143,11 @@ public class e_MessagesActivity extends Activity {
         toastShow(new_messages.size()+" new message/s downloaded");
 
         //...
+        if(new_messages!=null) {
+          globalState.save_new_messages(new_messages);
+          adapter.addMessages(new_messages);
+          adapter.notifyDataSetChanged();
+        }
 
       }
     }
@@ -128,6 +156,13 @@ public class e_MessagesActivity extends Activity {
   public void sendText(final View view) {
 
     //...
+    String text = input_text.getText().toString();
+    Message msg = new Message();
+    msg.setDate(new Date());
+    msg.setContent(text);
+    msg.setUserReceiver(globalState.user_to_talk_to);
+    msg.setUserSender(globalState.my_user);
+    new SendMessage_Task().execute(msg);
 
     input_text.setText("");
 
@@ -146,7 +181,7 @@ public class e_MessagesActivity extends Activity {
     protected Message doInBackground(Message... messages) {
 
       //...
-
+      Message message_reply = RPC.postMessage(messages[0]);
       //remove this sentence on completing the code:
       return null;
     }
@@ -157,6 +192,9 @@ public class e_MessagesActivity extends Activity {
         toastShow("message sent");
 
         //...
+        adapter.addMessage(message_reply);
+        globalState.save_new_message(message_reply);
+        adapter.notifyDataSetChanged();
 
       } else {
         toastShow("There's been an error sending the message");
@@ -170,7 +208,7 @@ public class e_MessagesActivity extends Activity {
     public void run() {
 
       //...
-
+      new fetchNewMessages_Task().execute(globalState.my_user.getId(), globalState.user_to_talk_to.getId());
     }
   }
 
