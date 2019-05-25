@@ -40,9 +40,9 @@ public class d_UsersListActivity extends Activity {
     protected List<UserInfo> doInBackground(Void... nothing) {
 
       //...
-
+      List<UserInfo> allUserInfos = RPC.allUserInfos();
       //remove this sentence on completing the code:
-      return null;
+      return allUserInfos;
 
     }
 
@@ -54,6 +54,17 @@ public class d_UsersListActivity extends Activity {
       } else {
 
         //...
+        final ListView listView = findViewById(R.id.listView);
+        adapter = new MyAdapter_users(d_UsersListActivity.this, users);
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+          @Override
+          public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            globalState.user_to_talk_to = (UserInfo) parent.getAdapter().getItem(position);
+            startActivity(new Intent(d_UsersListActivity.this, f_MessagesActivity.class));
+          }
+        });
 
       }
     }
