@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_picture">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/registration"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loginLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:text="login"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/RegisterLoginTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:inputType="text" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:text="login"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/RegisterPasswordTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:text="Name:"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/RegisterNameTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:text="Surname:"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/RegisterSurnameTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:text="e-mail:"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/RegisterEmailTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:inputType="text" />
+
+
+        <Button
+            android:id="@+id/editregistrationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="REGISTER"
+            android:textColor="@color/orange" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_picture">
+
+    <TextView
+        android:text="login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:id="@+id/loginLabel"/>
+
+    <EditText
+        android:id="@+id/login_text_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/loginLabel"/>
+
+
+    <TextView
+        android:text="password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="50dip"
+        android:id="@+id/passwordLabel"
+        android:layout_below="@+id/login_text_input"/>
+
+    <EditText
+        android:id="@+id/passowrd_text_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/passwordLabel"/>
+
+    <Button
+        android:id="@+id/editloginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:layout_marginBottom="40dip"
+        android:text="LOGIN"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:layout_below="@+id/passowrd_text_input"/>
+
+</RelativeLayout>
+
