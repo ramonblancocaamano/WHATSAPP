@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlTransient;
 
 /**
  * @Authors: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
- *           GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
+ * GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
  */
 @Entity
 @Table(name = "user_info")

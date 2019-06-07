@@ -6,14 +6,12 @@ import com.google.gson.GsonBuilder;
 import java.util.Date;
 
 /**
- * Created by juanluis.
+ * @Authors: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ * GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
  */
-
 public interface Comms {
-  String WhatsApp_server = "10.0.2.2:8080/SERVER";
-  // NOTE: OLD. String WhatsApp_server = "10.0.2.2:8080/WhatsAppServer_with_ddbb";
-  String url_rpc = "http://"+WhatsApp_server+"/rpc";
-  String ENDPOINT = "ws://"+WhatsApp_server+"/push";
-//  Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss+01:00").create();
-  Gson gson = new GsonBuilder().registerTypeAdapter(Date.class, new DateSerializerDeserializer()).create();
+    String WhatsApp_server = "10.0.2.2:8080/SERVER";
+    String url_rpc = "http://" + WhatsApp_server + "/rpc";
+    String ENDPOINT = "ws://" + WhatsApp_server + "/push";
+    Gson gson = new GsonBuilder().registerTypeAdapter(Date.class, new DateSerializerDeserializer()).create();
 }

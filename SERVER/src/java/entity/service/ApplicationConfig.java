@@ -5,7 +5,7 @@ import javax.ws.rs.core.Application;
 
 /**
  * @Authors: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
- *           GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
+ * GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
  */
 @javax.ws.rs.ApplicationPath("rpc")
 public class ApplicationConfig extends Application {

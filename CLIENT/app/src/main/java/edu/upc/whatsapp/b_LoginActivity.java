@@ -1,6 +1,7 @@
 package edu.upc.whatsapp;
 
 import edu.upc.whatsapp.comms.RPC;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -18,103 +19,104 @@ import edu.upc.whatsapp.service.PushService;
 import entity.User;
 import entity.UserInfo;
 
+/**
+ * @Authors: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
+ * GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
+ */
 public class b_LoginActivity extends Activity implements View.OnClickListener {
 
-  _GlobalState globalState;
-  ProgressDialog progressDialog;
-  User user;
-  OperationPerformer operationPerformer;
+    _GlobalState globalState;
+    ProgressDialog progressDialog;
+    User user;
+    OperationPerformer operationPerformer;
 
-  @Override
-  public void onCreate(Bundle icicle) {
-    super.onCreate(icicle);
-    globalState = (_GlobalState)getApplication();
-    setContentView(R.layout.b_login);
-    ((Button) findViewById(R.id.editloginButton)).setOnClickListener(this);
-  }
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        globalState = (_GlobalState) getApplication();
+        setContentView(R.layout.b_login);
+        ((Button) findViewById(R.id.editloginButton)).setOnClickListener(this);
+    }
 
-  public void onClick(View arg0) {
-    if (arg0 == findViewById(R.id.editloginButton)) {
+    public void onClick(View arg0) {
+        String login;
+        String password;
+        if (arg0 == findViewById(R.id.editloginButton)) {
+            user = new User();
 
-        //...
-        user = new User();
+            login = ((EditText) findViewById(R.id.login_text_input)).getText().toString();
+            password = ((EditText) findViewById(R.id.passowrd_text_input)).getText().toString();
 
-       EditText loginText = (EditText) findViewById(R.id.login_text_input);
-       String loginId = loginText.getText().toString();
-       user.setLogin(loginId);
+            user.setLogin(login);
+            user.setPassword(password);
 
-       EditText passwordText = (EditText) findViewById(R.id.passowrd_text_input);
-       String password = passwordText.getText().toString();
-       user.setPassword(password);
+            progressDialog = ProgressDialog.show(this, "LoginActivity", "Logging into the server...");
 
-        progressDialog = ProgressDialog.show(this, "LoginActivity", "Logging into the server...");
-        // if there's still a running thread doing something, we don't create a new one
-        if (operationPerformer == null) {
-          operationPerformer = new OperationPerformer();
-          operationPerformer.start();
+            /*
+             * If there's still a running thread doing something, we don't create a new one.
+             */
+            if (operationPerformer == null) {
+                operationPerformer = new OperationPerformer();
+                operationPerformer.start();
+            }
         }
     }
-  }
 
-  private class OperationPerformer extends Thread {
+    private class OperationPerformer extends Thread {
 
-    @Override
-    public void run() {
-      Message msg = handler.obtainMessage();
-      Bundle b = new Bundle();
+        @Override
+        public void run() {
+            Message msg = handler.obtainMessage();
+            Bundle b = new Bundle();
 
-      //...
-      UserInfo uInfo = null;
-      if(globalState.isThere_my_user()){
-        globalState.load_my_user();
-      }
+            UserInfo uInfo = null;
+            // TODO: USER ==NULL
+            if (globalState.isThere_my_user()) {
+                globalState.load_my_user();
+            }
 
-      if(globalState.my_user.getId().equals(user.getId())){
-        uInfo = globalState.my_user;
-      } else {
-        globalState.remove_my_user();
-        uInfo = RPC.login(user);
-        globalState.my_user = uInfo;
-        globalState.save_my_user();
-      }
+            if (globalState.my_user.getId().equals(user.getId())) {
+                uInfo = globalState.my_user;
+            } else {
+                globalState.remove_my_user();
+                uInfo = RPC.login(user);
+                globalState.my_user = uInfo;
+                globalState.save_my_user();
+            }
 
-      b.putSerializable("userInfo", uInfo);
+            b.putSerializable("userInfo", uInfo);
 
 
-      msg.setData(b);
-      handler.sendMessage(msg);
+            msg.setData(b);
+            handler.sendMessage(msg);
+        }
     }
-  }
 
-  Handler handler = new Handler() {
-    @Override
-    public void handleMessage(Message msg) {
+    Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
 
-      operationPerformer = null;
-      progressDialog.dismiss();
+            operationPerformer = null;
+            progressDialog.dismiss();
 
-      UserInfo userInfo = (UserInfo) msg.getData().getSerializable("userInfo");
+            UserInfo userInfo = (UserInfo) msg.getData().getSerializable("userInfo");
 
-      if (userInfo.getId() >= 0) {
-        toastShow("Login successful");
+            if (userInfo.getId() >= 0) {
+                toastShow("Login successful");
+                startActivity(new Intent(b_LoginActivity.this, d_UsersListActivity.class));
+                finish();
+            } else if (userInfo.getId() == -1) {
+                toastShow("Login unsuccessful, try again please.");
+            } else if (userInfo.getId() == -2) {
+                toastShow("Not logged in, connection problem due to: " + userInfo.getName());
+            }
 
-        //...
-        startActivity(new Intent(b_LoginActivity.this, d_UsersListActivity.class));
-        finish();
-      }
-      else if (userInfo.getId() == -1){
-        toastShow("Login unsuccessful, try again please.");
-      }
-      else if (userInfo.getId() == -2){
-        toastShow("Not logged in, connection problem due to: " + userInfo.getName());
-      }
+        }
+    };
 
+    private void toastShow(String text) {
+        Toast toast = Toast.makeText(this, text, Toast.LENGTH_LONG);
+        toast.setGravity(0, 0, 200);
+        toast.show();
     }
-  };
-
-  private void toastShow(String text) {
-    Toast toast = Toast.makeText(this, text, Toast.LENGTH_LONG);
-    toast.setGravity(0, 0, 200);
-    toast.show();
-  }
 }

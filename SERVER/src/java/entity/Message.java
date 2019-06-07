@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * @Authors: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
- *           GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
+ * GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
  */
 @Entity
 @Table(name = "message")

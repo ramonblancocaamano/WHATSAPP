@@ -5,7 +5,7 @@ import javax.persistence.EntityManager;
 
 /**
  * @Authors: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
- *           GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
+ * GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
  */
 public abstract class AbstractFacade<T> {
 

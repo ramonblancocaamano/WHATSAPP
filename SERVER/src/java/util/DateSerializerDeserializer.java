@@ -16,7 +16,7 @@ import java.util.Date;
 
 /**
  * @Authors: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
- *           GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
+ * GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
  */
 public class DateSerializerDeserializer implements JsonDeserializer<Date>, JsonSerializer<Date> {
 

@@ -18,7 +18,7 @@ import util.DateSerializerDeserializer;
 
 /**
  * @Authors: BLANCO CAAMANO, Ramon <ramonblancocaamano@gmail.com>
- *           GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
+ * GREGORIO DURANTE, Nicola <ng.durante@gmail.com>
  */
 @ServerEndpoint("/push")
 public class WebSocketServer {
