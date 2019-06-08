@@ -7,11 +7,11 @@
     android:background="@drawable/background_picture">
 
     <TextView
-        android:text="login"
+        android:text="LOGIN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/orange"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
         android:layout_marginTop="20dip"
@@ -28,11 +28,11 @@
 
 
     <TextView
-        android:text="password"
+        android:text="PASSWORD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/orange"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
         android:layout_marginTop="50dip"

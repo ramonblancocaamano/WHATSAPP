@@ -18,9 +18,9 @@
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
             android:layout_marginTop="10dip"
-            android:text="login"
+            android:text="LOGIN"
             android:textColor="@color/orange"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/RegisterLoginTextInput"
@@ -37,9 +37,9 @@
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
             android:layout_marginTop="15dip"
-            android:text="login"
+            android:text="PASSWORD"
             android:textColor="@color/orange"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/RegisterPasswordTextInput"
@@ -55,9 +55,9 @@
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
             android:layout_marginTop="15dip"
-            android:text="Name:"
+            android:text="NAME"
             android:textColor="@color/orange"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/RegisterNameTextInput"
@@ -73,9 +73,9 @@
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
             android:layout_marginTop="15dip"
-            android:text="Surname:"
+            android:text="SURNAME"
             android:textColor="@color/orange"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/RegisterSurnameTextInput"
@@ -91,9 +91,9 @@
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
             android:layout_marginTop="15dip"
-            android:text="e-mail:"
+            android:text="E-MAIL"
             android:textColor="@color/orange"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/RegisterEmailTextInput"
