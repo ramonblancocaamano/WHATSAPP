@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AvailableLibraryUpdateStorage">
@@ -21,7 +22,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a786414-7c10-4bc2-9f46-1a53737a819e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -31,12 +31,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/b_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/b_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/c_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/c_registration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/Comms.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/Comms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background_picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/a_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/a_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/nbproject/private/private.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,59 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/a_welcome.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/c_registration.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="112" column="34" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="34" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/b_login.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/Comms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="51">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,15 +78,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/net/PlainSocketImpl.class">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2312">
+              <caret line="154" column="47" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/RPC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="2839">
+              <caret line="181" column="85" selection-start-line="181" selection-start-column="78" selection-end-line="181" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="1649">
+              <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,13 +116,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="118" column="46" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
+            <state relative-caret-position="1428">
+              <caret line="117" column="89" selection-start-line="117" selection-start-column="89" selection-end-line="117" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/a_welcome.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/app_logo.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -213,12 +192,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_users.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/DateSerializerDeserializer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/RPC.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/service/PushService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/c_RegistrationActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/d_UsersListActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/entity/Message.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/entity/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/entity/UserInfo.java" />
@@ -229,10 +206,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/c_registration.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/b_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/Comms.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/RPC.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/a_welcome.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="width" value="981" />
     <option name="height" value="1044" />
@@ -243,7 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,17 +235,6 @@
             <path>
               <item name="CLIENT" type="b2602c69:ProjectViewProjectNode" />
               <item name="CLIENT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CLIENT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CLIENT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-              <item name="buildOutputCleanup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CLIENT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CLIENT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -287,6 +257,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CLIENT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CLIENT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CLIENT" type="b2602c69:ProjectViewProjectNode" />
@@ -297,12 +276,21 @@
               <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CLIENT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CLIENT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,9 +401,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49655172" visible="true" weight="0.12307692" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49655172" visible="true" weight="0.30850202" />
       <window_info id="Structure" order="2" sideWeight="0.50344825" side_tool="true" weight="0.16842106" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" sideWeight="0.50344825" side_tool="true" weight="0.16842106" />
@@ -423,14 +412,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32955465" />
       <window_info id="Capture Tool" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.8874494" visible="true" weight="0.32867134" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.8251012" weight="0.493007" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.8842105" weight="0.32867134" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.897166" weight="0.1486014" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49635628" weight="0.32867134" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48421052" weight="0.32867134" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48340082" weight="0.32867134" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4979757" weight="0.32867134" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.11255061" side_tool="true" visible="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.11578947" side_tool="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49716598" weight="0.32867134" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.8817814" weight="0.32342657" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.83319837" visible="true" weight="0.052447554" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.4979757" weight="0.32867134" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="bottom" id="Inspection Results" order="10" sideWeight="0.49635628" weight="0.32867134" />
@@ -442,6 +431,35 @@
       <window_info anchor="right" id="Assistant" order="5" weight="0.32955465" />
       <window_info anchor="right" id="Preview" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49655172" weight="0.30850202" />
+      <window_info id="Structure" order="2" sideWeight="0.50344825" side_tool="true" weight="0.16842106" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" sideWeight="0.50344825" side_tool="true" weight="0.16842106" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" weight="0.32955465" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.8842105" visible="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.897166" weight="0.1486014" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49635628" weight="0.32867134" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48340082" weight="0.32867134" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4979757" weight="0.32867134" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.11578947" side_tool="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49716598" weight="0.32867134" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.83319837" weight="0.32342657" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.4979757" weight="0.32867134" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
+      <window_info anchor="bottom" id="Inspection Results" order="10" sideWeight="0.49635628" weight="0.32867134" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.32955465" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Assistant" order="5" weight="0.32955465" />
+      <window_info anchor="right" id="Preview" order="6" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -483,112 +501,7 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/RPC.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java</url>
-          <line>81</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-23/android.jar!/android/widget/BaseAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#1364#1365#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/DateSerializerDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/service/PushService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="223" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/a_WelcomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/adapter/MyAdapter_messages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/d_UsersListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding>
-            <element signature="e#1986#2405#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-23/android.jar!/android/view/ViewGroup.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-23/android.jar!/android/os/MessageQueue.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -603,17 +516,6 @@
         <state>
           <folding>
             <element signature="e#0#1515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/entity/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="87" />
-          <folding>
-            <element signature="e#1579#1580#0" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -800,16 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-23/android/content/ContextWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
@@ -860,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/Dialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="1159" column="25" selection-start-line="1159" selection-start-column="25" selection-end-line="1159" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -875,20 +760,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/a_welcome.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/c_registration.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -898,21 +775,78 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/os/MessageQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5219">
+          <caret line="332" column="43" lean-forward="true" selection-start-line="332" selection-start-column="43" selection-end-line="332" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2724" selection-start-line="2724" selection-end-line="2724" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/entity/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="318" selection-start-line="318" selection-end-line="318" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/net/PlainSocketImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/b_login.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
+        <state relative-caret-position="1076">
           <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/net/PlainSocketImpl.class">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background_picture.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background_picture.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/Comms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/_GlobalState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2312">
+          <caret line="154" column="47" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/RPC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="2839">
+          <caret line="181" column="85" selection-start-line="181" selection-start-column="78" selection-end-line="181" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -921,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/b_LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="1649">
+          <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -931,23 +865,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/e_MessagesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="118" column="46" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
+        <state relative-caret-position="1428">
+          <caret line="117" column="89" selection-start-line="117" selection-start-column="89" selection-end-line="117" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/upc/whatsapp/comms/Comms.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/app_logo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/a_welcome.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
   </component>
   <component name="masterDetails">

@@ -21,10 +21,15 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
+import org.glassfish.tyrus.client.ClientManager;
+
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+
+
 
 import edu.upc.whatsapp.comms.RPC;
 import edu.upc.whatsapp.adapter.MyAdapter_messages;
@@ -44,6 +49,8 @@ public class e_MessagesActivity extends Activity {
     private Button button;
     private boolean enlarged = false, shrunk = true;
 
+
+
     private Timer timer;
 
     @Override
@@ -62,17 +69,14 @@ public class e_MessagesActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        timer = new Timer();
-        TimerTask task = new fetchNewMessagesTimerTask();
-        timer.schedule(task, 1000, 2000);
+        //...
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        //...
 
-        if (timer != null)
-            timer.cancel();
     }
 
     private class fetchAllMessages_Task extends AsyncTask<Integer, Void, List<Message>> {
@@ -88,12 +92,11 @@ public class e_MessagesActivity extends Activity {
             List<Message> all_messages;
 
             if (globalState.isThere_messages()) {
-                all_messages = globalState.load_messages();
-            } else {
                 all_messages = RPC.retrieveMessages(userIds[0], userIds[1]);
-            }
+                return all_messages;
+            }else
+                return null;
 
-            return all_messages;
         }
 
         @Override
@@ -116,18 +119,12 @@ public class e_MessagesActivity extends Activity {
 
         @Override
         protected List<Message> doInBackground(Integer... userIds) {
-            List<Message> all_messages = null;
+            List<Message> all_messages = globalState.load_messages();
+            List<Message> new_messages;
 
-            if (globalState.isThere_messages()) {
-                List<Message> saved_messages = globalState.load_messages();
-                Message msg = null;
-                if (saved_messages != null && saved_messages.size() > 0) {
-                    msg = all_messages.get(all_messages.size() - 1);
-                }
-                all_messages = RPC.retrieveNewMessages(userIds[0], userIds[1], msg);
-            }
+            new_messages = RPC.retrieveNewMessages(userIds[0], userIds[1], all_messages.get(all_messages.size()-1));
 
-            return all_messages;
+            return new_messages;
         }
 
         @Override
@@ -176,7 +173,7 @@ public class e_MessagesActivity extends Activity {
         @Override
         protected Message doInBackground(Message... messages) {
             Message message_reply = RPC.postMessage(messages[0]);
-            return null;
+            return message_reply;
         }
 
         @Override

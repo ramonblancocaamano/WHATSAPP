@@ -10,21 +10,24 @@
         android:id="@+id/welcomeMessageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dip"
         android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
         android:focusable="true"
         android:text="WhatsApp Aplication"
-        android:textSize="28sp"/>
+        android:textColor="#B71C1C"
+        android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/welcomeLogoImageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/welcomeMessageTextView"
-        android:layout_marginLeft="20dip"
+
+        android:layout_centerInParent="true"
         android:adjustViewBounds="true"
-        android:src="@drawable/app_logo"/>
+        android:src="@drawable/promotion" />
 
     <LinearLayout
         android:id="@+id/welcomeLinearLayout"

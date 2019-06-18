@@ -12,6 +12,7 @@ import java.util.Date;
 public interface Comms {
     String WhatsApp_server = "10.0.2.2:8080/SERVER";
     String url_rpc = "http://" + WhatsApp_server + "/rpc";
+
     String ENDPOINT = "ws://" + WhatsApp_server + "/push";
     Gson gson = new GsonBuilder().registerTypeAdapter(Date.class, new DateSerializerDeserializer()).create();
 }
